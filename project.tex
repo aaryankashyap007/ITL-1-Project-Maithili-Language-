@@ -1,0 +1,1495 @@
+\documentclass[17pt]{extarticle}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{polyglossia}
+\usepackage{fontspec}
+\usepackage{tipa}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, positioning}
+
+\setmainlanguage{english}
+\setotherlanguage{hindi}
+\newfontfamily\hindifont[Script=Devanagari]{Noto Sans Devanagari}
+
+\setmainfont{Doulos SIL}
+
+\usepackage{graphicx} % Required for inserting images
+
+\title{\Large ITL Final Project}
+\author{\Large Aaryan Kashyap}
+\date{\Large December 2023}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    
+\hspace*{0.5cm}This project aims to cultivate a comprehensive understanding of linguistic analysis and the practical application of foundational linguistic principles to real-world challenges in the \emph{Maithili} language.
+
+The research focuses on the examination of three original devotional songs in the \emph{Maithili} language, incorporating phonetic, morphological, and structural analyses. Additionally, a historical analysis of the language will be presented. These analyses draw upon the conceptual knowledge acquired during our course semester.
+
+In conclusion, this project delves into the distinctive linguistic properties of \emph{Maithili}, an Indian language, in both its spoken and written forms.
+
+\end{abstract}
+
+\section*{\textbf{Acknowledgements}}
+I would like to express my sincere gratitude to the following individuals who have contributed to the completion of this project:
+\begin{itemize}
+  \item \textbf{Course Professor:} [Dr. Rajakrishnan Rajkumar] for his teachings and guidance in introduction to linguistics and phonetics.
+  
+  \item \textbf{Course Professor:} [Dr. Aditi Mukherjee] for her teaching on morphology, syntax analysis, phrase structure and dependency grammar.
+  
+  \item \textbf{Teaching Assistant:} [Akshit Kumar] for his guidance throughout the semester.
+  
+  \item \textbf{Classmates:} My classmates enrolled in this course of \emph{Introduction to Linguistics-1} helped me through various difficulties faced by me in understanding this course.
+  
+\end{itemize}
+
+\section*{\textbf{Contents}}
+
+\section*{\textbf{Introduction}}
+
+\hspace*{0.5cm}\emph{Maithili} is an Indo-Aryan language predominantly spoken in the northern regions of India and Nepal. It holds significant cultural and linguistic importance in these areas. This language is primarily written in the Devanagari script. It is one of the 22 officially recognised languages of India and the second most spoken language of Nepal.
+
+In 2003, \emph{Maithili} was included in the Eighth Schedule of the Indian Constitution as a recognized Indian language, which allows it to be used in education, government, and other official contexts in India. In March 2018, \emph{Maithili} received the second official language status in the Indian state of Jharkhand.
+
+This project aims to provide a comprehensive overview of the \emph{Maithili} language, including its linguistic features, historical significance, geographical distribution, and current status.
+
+\begin{itemize}
+    \item{\textbf{Geographical Distribution}}
+
+\emph{Maithili} is predominantly spoken in the following regions:
+\begin{itemize}
+    \item Bihar, India
+    \item Eastern Terai region of Nepal
+    \item Parts of Jharkhand, West Bengal, and Assam, India
+\end{itemize}
+
+\item{\textbf{Number of Speakers}}
+
+As of my knowledge cutoff date in September 2021, \emph{Maithili} boasts a substantial number of speakers, estimated to be around 33 million. However, it's important to note that these numbers may have changed since then.
+
+\item{\textbf{Linguistic Features}}
+
+\emph{Maithili} is known for its rich linguistic heritage. It belongs to the Indo-Aryan branch of the Indo-European language family. The language exhibits several unique phonetic, morphological, and syntactic features that set it apart from other languages in the region.
+
+\item{\textbf{Historical Significance}}
+
+The history of \emph{Maithili} is deeply intertwined with the cultural and literary heritage of the Mithila region. It has a long tradition of literary works, including poetry, prose, and religious texts. \emph{Maithili} has contributed significantly to the cultural tapestry of South Asia.
+\end{itemize}
+
+The tasks done in the project are given below:
+\begin{itemize}
+    \item \textbf{Phonetic transcription}
+    The original text in \emph{Devnagari} is first transcribed into roman script and then it is transcribed using the International Phonetic Alphabet (IPA).
+    \item \textbf{Syllabification}
+    Syllabifying each word in the sentences of the text.
+    \item Morphological typology
+    Highlighting root/free morphemes in the word, identifying allomorphs and performing categorization.
+    \item \textbf{Syntax analysis}
+    Investigating the sentence structure, identifying basic word order and analysing distribution of various constituents.
+    \item \textbf{Phrase structure and dependency grammar}
+    Creating phrase structure and dependency grammar tree for all the sentences and analysing the structure and grammar of the language.
+    \item \textbf{Language family and historical analysis}
+    Present the linguistic features of the language family chosen and tracing the historic development of the language by analysing their origin and influences from other languages.
+
+\end{itemize}
+
+\section*{\textbf{Phonetic Transcription}}
+
+\subsection*{Text 1}
+\subsubsection*{\textbf{Original \emph{Devanagari} script:}}
+\begin{hindi}
+पहिले पहिले हम कईनी\\
+छठी मईया व्रत तोहार\\
+छठी मईया व्रत तोहार\\
+करिह क्षमा छठी मईया\\
+भूल चुक गलति हमार\\
+भूल चुक गलति हमार\\\\
+गोदी के बलकवा के दिह\\
+छठी मईया ममता दुलार\\
+छठी मईया ममता दुलार\\
+पिया के सनेहिया बनहिय\\
+मईया दिह सुख सार\\
+मईया दिह सुख सार\\\\
+नारियर केरवा घोउदवा\\
+साजल नदिया किनार\\
+साजल नदिया किनार\\
+सुनिह अरज छठी मईया\\
+बढ़े कुल परिवार\\
+बढ़े कुल परिवार\\\\
+घाट सजावाली मनोहर\\
+मईया तोर भगति आपार\\
+मईया तोर भगति आपार\\
+लिहिएं अरगिया हे मईया\\
+दिहीं आशीष हजार\\
+दिहीं आशीष हजार\\\\
+पहिले पहिले हम कईनी\\
+छठी मईया व्रत तोहार\\
+छठी मईया व्रत तोहार\\
+करिह क्षमा छठी मैया\\
+भूल चुक गलति हमार\\
+भूल चुक गलति हमार\\
+भूल चुक गलति हमार\\
+\end{hindi}
+
+\subsubsection*{\textbf{Roman Transcription:}}
+Pahile pahile hum kaini\\
+Chhathi maiya vrat tohar\\
+Chhathi maiya vrat tohar\\
+Kariha kshama chhathi maiya\\
+Bhool chuk galati hamar\\
+Bhool chuk galati hamar\\\\
+Godi ke balakava ke diha\\
+Chhathi maiya mamata dular\\
+Chhathi maiya mamata dular\\
+Piya ke sanehiya banaiha\\
+Maiya diha sukh-saar\\
+Maiya diha sukh-saar\\\\
+Nariyar kerava goudava\\
+Sajal nadiya kinaar\\
+Sajal nadiya kinaar\\
+Suniha araj chhathi maiya\\
+Badhe kul-parivaar\\
+Badhe kul-parivaar\\\\
+Ghat sajavali manohar\\
+Maiya tor bhagati aapar\\
+Maiya tor bhagati aapar\\
+Lihien aragha he maiya\\
+Dihin aashish hajaar\\
+Dihin aashish hajaar\\\\
+Pahile pahile hum kaini\\
+Chhathi maiya vrat tohar\\
+Chhathi maiya vrat tohar\\
+Kariha kshama chhathi maiya\\
+Bhool chuk galati hamar\\
+Bhool chuk galati hamar\\
+Bhool chuk galati hamar\\
+
+\subsubsection*{\textbf{IPA Transcription}}
+
+pəɦileː pəɦileː ɦəmə kəiːniː\\
+cʰəʈʰɪ  məiːjɑː bərət̪ə t̪oːɦɑːrə\\
+cʰəʈʰɪː məiːjɑː bərət̪ə t̪oːɦɑːrə\\\\
+kəriɦə kʂəmɑː cʰəʈʰiː məiːjɑː\\
+bʰuːlə cukə ɡələt̪i ɦəmɑːrə\\
+bʰuːlə cukə ɡələt̪i ɦəmɑːrə\\\\
+ɡoːd̪iː keː bələkəvɑː keː d̪iɦə\\
+cʰəʈʰɪː məiːjɑː məmət̪ɑː d̪ulɑːrə\\
+cʰəʈʰɪː məiːjɑː məmət̪ɑː d̪ulɑːrə\\\\
+pijɑː keː səneːɦijɑː bənəɦijə\\
+məiːjɑː d̪iɦə sukʰə sɑːrə\\
+məiːjɑː d̪iɦə sukʰə sɑːrə\\\\
+nɑːrijərə keːrəvɑː ɡʰoːud̪əvɑː\\
+sɑːɟələ nəd̪ijɑː kinɑːrə\\
+sɑːɟələ nəd̪ijɑː kinɑːrə\\\\
+suniɦə ərəɟə cʰəʈʰiː məiːjɑː\\
+bəɖʰe kulə pərivɑːrə\\
+bəɖʰe kulə pərivɑːrə\\\\
+ɡʰɑːʈə səɟɑːvɑːliː mənoːɦərə\\
+məiːjɑː t̪oːrə bʰəɡət̪i ɑːpɑːrə\\
+məiːjɑː t̪oːrə bʰəɡət̪i ɑːpɑːrə\\\\
+liɦieːⁿ ərəɡijɑː ɦeː məiːjɑː\\
+d̪iɦiːⁿ ɑːɕiːʂə ɦəɟɑːrə\\
+d̪iɦiːⁿ ɑːɕiːʂə ɦəɟɑːrə\\\\
+pəɦileː pəɦileː ɦəmə kəiːniː\\
+cʰəʈʰɪː məiːjɑː vrət̪ə t̪oːɦɑːrə\\
+cʰəʈʰɪː məiːjɑː vrət̪ə t̪oːɦɑːrə\\\\
+kəriɦə kʂəmɑː cʰəʈʰiː maːijɑː\\
+bʰuːlə cukə ɡələt̪i ɦəmɑːrə\\
+bʰuːlə cukə ɡələt̪i ɦəmɑːrə\\
+bʰuːlə cukə ɡələt̪i ɦəmɑːrə\\
+
+
+\subsection*{\textbf{Text 2}}
+
+\subsubsection*{\textbf{Original \emph{Devanagari} script:}}
+
+\begin{hindi}
+\hspace*{0.7cm}उगह हे सूरज देव भेल भिनसरवा\\
+अरघ के रे बेरवा पूजन के रे बेरवा हो \\\\
+
+बड़की पुकारे देव दुनु कर जोरवा \\
+अरघ के रे बेरवा पूजन के रे बेरवा हो\\\\ 
+
+बाझिंन पुकारे देव दुनु कर जोरवा \\
+अरघ के रे बेरवा पूजन के रे बेरवा हो\\\\ 
+
+अन्हरा पुकारे देव दुनु कर जोरवा \\
+अरघ के रे बेरवा पूजन के रे बेरवा हो\\\\ 
+
+निर्धन पुकारे देव दुनु कर जोरवा \\
+अरघ के रे बेरवा पूजन के रे बेरवा हो\\\\ 
+
+कोढ़िया पुकारे देव दुनु कर जोरवा \\
+अरघ के रे बेरवा पूजन के रे बेरवा हो\\\\ 
+
+लंगड़ा पुकारे देव दुनु कर जोरवा \\
+अरघ के रे बेरवा पूजन के रे बेरवा हो\\\\ 
+
+उगह हे सूरज देव भेल भिनसरवा \\
+अरघ के रे बेरवा पूजन के रे बेरवा हो\\
+
+\end{hindi}
+
+\subsubsection*{\textbf{Roman Transcription:}}
+
+Uga he suraj dev bhel bhinsarva \\
+Aragh ke re berva pujan ke re berava ho\\\\
+Badki pukare dev dunu kar jorwa \\
+Aragh ke re berva pujan ke re berava ho\\\\
+Baajhin pukare dev dunu kar jorwa \\
+Aragh ke re berva pujan ke re berava ho\\\\
+Anhara pukare dev dunu kar jorwa \\
+Aragh ke re berva pujan ke re berava ho\\\\
+Nirdhan pukare dev dunu kar jorwa \\
+Aragh ke re berva pujan ke re berava ho\\\\
+Kodhiya pukare dev dunu kar jorwa \\
+Aragh ke re berva pujan ke re berava ho\\\\
+Langda pukare dev dunu kar jorwa \\
+Aragh ke re berva pujan ke re berava ho\\\\
+Uga he suraj dev bhel bhinsarva \\
+Aragh ke re berva pujan ke re berava ho\\
+
+\subsubsection*{\textbf{IPA Transcription}}
+
+uɡəɦə ɦeː suːrəɟə d̪eːvə bʰeːlə bʰinəsərəvɑː \\
+ərəɡʰə keː reː beːrəvɑː puːɟənə keː reː beːrəvɑː ɦoː\\\\
+bəɽəkiː pukɑːreː d̪eːvə d̪unu kərə ɟoːrəvɑː \\
+ərəɡʰə keː reː beːrəvɑː puːɟənə keː reː beːrəvɑː ɦoː\\\\
+bɑːɟʰinə pukɑːreː d̪eːvə d̪unu kərə ɟoːrəvɑː \\
+ərəɡʰə keː reː beːrəvɑː puːɟənə keː reː beːrəvɑː ɦoː\\\\
+ənɦərɑː pukɑːreː d̪eːvə d̪unu kərə ɟoːrəvɑː \\
+ərəɡʰə keː reː beːrəvɑː puːɟənə keː reː beːrəvɑː ɦoː\\\\
+nird̪ʰənə pukɑːreː d̪eːvə d̪unu kərə ɟoːrəvɑː \\
+ərəɡʰə keː reː beːrəvɑː puːɟənə keː reː beːrəvɑː ɦoː\\\\
+koːɽʱijɑː pukɑːreː d̪eːvə d̪unu kərə ɟoːrəvɑː \\
+ərəɡʰə keː reː beːrəvɑː puːɟənə keː reː beːrəvɑː ɦoː\\\\
+lⁿɡəɽɑː pukɑːreː d̪eːvə d̪unu kərə ɟoːrəvɑː \\
+ərəɡʰə keː reː beːrəvɑː puːɟənə keː reː beːrəvɑː ɦoː\\\\
+uɡəɦə ɦeː suːrəɟə d̪eːvə bʰeːlə bʰinəsərəvɑː \\
+ərəɡʰə keː reː beːrəvɑː puːɟənə keː reː beːrəvɑː ɦoː\\\\
+
+\subsection*{\textbf{Text 3}}
+
+\subsubsection*{\textbf{Original \emph{Devanagari} Script}}
+
+\begin{hindi}
+
+कांच ही बांस के बहंगिया,\\
+बहंगी लचकत जाए,\\
+बहंगी लचकत जाए ।\\\\
+होई ना बलम जी कहरिया,\\
+बहंगी घाटे पहुंचाए,\\
+बहंगी घाटे पहुंचाए ।\\\\
+कांच ही बांस के बहंगिया,\\
+बहंगी लचकत जाए,\\
+बहंगी लचकत जाए ।\\\\
+बाटे जे पुछेला बटोहिया\\
+बहंगी केकरा के जाए,\\
+बहंगी केकरा के जाए ।\\\\
+तू तो आन्हर होवे रे बटोहिया,\\
+बहंगी छठ मैया के जाए,\\
+बहंगी छठ मैया के जाए ।\\\\
+ऊंहवे जे बारी छठी मैया,\\
+बहंगी उनके के जाए,\\
+बहंगी उनके के जाए ।\\\\
+कांच ही बांस के बहंगिया,\\
+बहंगी लचकत जाए,\\
+बहंगी लचकत जाए ।\\\\
+होई ना देवर जी कहरिया,\\
+बहंगी घाटे पहुंचाए,\\
+बहंगी घाटे पहुंचाए ।\\\\
+ऊंहवे जे बारी छठी मैया,\\
+बहंगी उनके के जाए,\\
+बहंगी उनके के जाए ।\\\\
+बाटे जे पुछेला बटोहिया,\\
+बहंगी केकरा के जाए,\\
+बहंगी केकरा के जाए ।\\\\
+तू तो आन्हर होवे रे बटोहिया,\\
+बहंगी छठ मैया के जाए,\\
+बहंगी छठ मैया के जाए ।\\\\
+ऊंहवे जे बारी छठी मैया,\\
+बहंगी उनके के जाए,\\
+बहंगी उनके के जाए ।\\
+\end{hindi}
+
+\subsubsection*{\textbf{Roman Transcription}}
+
+Kaanch Hi Baans Ke Bahangiya,\\
+Bahangi Lachakat Jaaye,\\
+Bahangi Lachakat Jaaye.\\\\
+Hoi Naa Balam Ji Kahariya,\\
+Bahangi Ghate Pahunchaaye,\\
+Bahangi Ghate Pahunchaaye.\\\\
+Kaanch Hi Baans Ke Bahangiya,\\
+Bahangi Lachakat Jaaye,\\
+Bahangi Lachakat Jaaye.\\\\
+Baate Je Puchhela Batohiya,\\
+Bahangi Kekra Ke Jaaye,\\
+Bahangi Kekra Ke Jaaye.\\\\
+Tu To Aanhar Hove Re Batohiya,\\
+Bahangi Chhath Maiya Ke Jaaye,\\
+Bahangi Chhath Maiya Ke Jaaye.\\\\
+Hunave Je Baari Chhathi Maiya,\\
+Bahangi Unke Ke Jaaye,\\
+Bahangi Unke Ke Jaaye.\\\\
+Kanch Hi Bans Ke Bahangiya,\\
+Bahangi Lachakat Jaaye,\\
+Bahangi Lachakat Jaaye.\\\\
+Hoi Naa Devar Ji Kahariya,\\
+Bahangi Ghate Pahunchaaye,\\
+Bahangi Ghate Pahunchaaye.\\\\
+Hunave Je Baari Chhathi Maiya,\\
+Bahangi Unke Ke Jaaye,\\
+Bahangi Unke Ke Jaaye.\\\\
+Baate Je Puchhela Batohiya,\\
+Bahangi Kekra Ke Jaaye,\\
+Bahangi Kekra Ke Jaaye.\\\\
+Tu To Aanhar Hove Re Batohiya,\\
+Bahangi Chhath Maiya Ke Jaaye,\\
+Bahangi Chhath Maiya Ke Jaaye.\\\\
+Hunave Je Baari Chhathi Maiya,\\
+Bahangi Unke Ke Jaaye,\\
+Bahangi Unke Ke Jaaye\\
+
+\subsubsection*{\textbf{IPA Transcription}}
+
+kɑːⁿcə ɦiː bɑːⁿsə keː bəɦⁿɡiːjɑː\\
+bəɦⁿɡiː ləcəkət̪ə ɟɑːjə\\
+bəɦⁿɡiː ləcəkət̪ə ɟɑːjə\\\\
+ɦoːiː nɑː bələmə ɟiː kəɦərijɑː\\
+bəɦⁿɡiː ɡʰɑːʈeː pəɦuⁿcɑːiː\\
+bəɦⁿɡɡiː ɡʰɑːʈeː pəɦuⁿcɑːiː\\
+kɑːⁿcə ɦiː bɑːⁿsə keː bəɦⁿɡiːjɑː\\
+bəɦⁿɡiː ləcəkət̪ə ɟɑːjə\\
+bəɦⁿɡiː ləcəkət̪ə ɟɑːjə\\\\
+bɑːʈeː ɟeː pucʰeːlɑː bəʈoːɦijɑː\\
+bəɦⁿɡiː keːkərɑː keː ɟɑːjə\\
+bəɦⁿɡiː keːkərɑː keː ɟɑːjə\\\\
+ɦunəveː ɟeː bɑːriː cʰəʈʰiː maːijɑː\\
+bəɦⁿɡiː unəkeː keː ɟɑːjə\\
+bəɦⁿɡiː unəkeː keː ɟɑːjə\\\\
+kɑːⁿcə ɦiː bɑːⁿsə keː bəɦⁿɡiːjɑː\\
+bəɦⁿɡiː ləcəkət̪ə ɟɑːjə\\
+bəɦⁿɡiː ləcəkət̪ə ɟɑːjə\\\\
+ɦoːiː nɑː d̪eːvərə ɟiː kəɦərijɑː\\
+bəɦⁿɡiː ɡʰɑːʈeː pəɦuⁿcɑːiː\\
+bəɦⁿɡiː ɡʰɑːʈeː pəɦuⁿcɑːiː\\\\
+bɑːʈeː ɟeː pucʰeːlɑː bəʈoːɦijɑː\\
+bəɦⁿɡiː keːkərɑː keː ɟɑːjə\\
+bəɦⁿɡiː keːkərɑː keː ɟɑːjə\\\\
+t̪uː t̪ə ɑːnɦərə ɦaːuveː reː bəʈoːɦijɑː\\
+bəɦⁿɡiː cʰəʈʰə maːijɑː keː ɟɑːjə\\
+bəɦⁿɡiː cʰəʈʰə maːijɑː keː ɟɑːjə\\\\
+ɦunəveː ɟeː bɑːriː cʰəʈʰiː maːijɑɡ\\
+bəɦⁿɡiː unəkeː keː ɟɑːjə\\
+bəɦⁿɡiː unəkeː keː ɟɑːjə\\\\
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{7}{|c|}{\textbf{Consonants}} \\
+\hline
+& \textbf{Bilabial} & \textbf{Dental} & \textbf{Retroflex} & \textbf{Palatal} & \textbf{Velar} & \textbf{Glottal} \\
+\hline
+\textbf{Stops} & p & t & \textipa{\:t} & & k & \\
+& p\textsuperscript{h} & t\textsuperscript{h} & \textipa{\:t}\textsuperscript{h} & & k\textsuperscript{h} & \\
+& b & d & \textipa{\:d} & & ɡ & \\
+& b\textsuperscript{h} & d\textsuperscript{h} & \textipa{\:d}\textsuperscript{h} & & ɡ\textsuperscript{h} & \\
+\hline
+\textbf{Affricates} & & & & \textipa{c} & & \\
+& & & & \textipa{ch} & & \\
+& & & & \textipa{j} & & \\
+& & & & \textipa{jh} & & \\
+\hline
+\textbf{Nasals} & m & n & \textipa{\:n} & & \textipa{N} & \\
+\hline
+\textbf{Taps} & & r & \textipa{\:r} & & & \\
+\hline
+\textbf{Fricatives} & & s & \textipa{\:s} & \textipa{C} & & \textipa{h} \\
+\hline
+\textbf{Approximants} & w & & & y & & \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Vowels}} \\
+\hline
+& \textbf{Front} & \textbf{Central} & \textbf{Back} \\
+\hline
+\textbf{High} & i &  & u \\
+\hline
+\textbf{Mid} & e & \textipa{@} & o \\
+\hline
+\textbf{Low} & æ & a &  \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{center}
+    {IPA Chart}
+\end{center}
+
+\section*{\textbf{Syllabification}}
+
+The syllables in each word of some sentences from the texts are separated below:
+
+\subsection*{\textbf{Text 1}}
+
+\hspace{0.7cm}[ \underline{pə} \underline{ɦi} \underline{leː} ] [ \underline{pə} \underline{ɦi} \underline{leː} ] [ \underline{ɦə} \underline{mə} ] [ \underline{kəiː} \underline{niː} ]\\
+
+[ \underline{cʰə} \underline{ʈʰɪː} ] [ \underline{məiː} \underline{jɑː} ] [ \underline{bə} \underline{rə} \underline{t̪ə} ] [ \underline{t̪oː} \underline{ɦɑː} \underline{rə} ]\\
+
+[ \underline{cʰə} \underline{ʈʰɪː} ] [ \underline{məiː} \underline{jɑː} ] [ \underline{bə} \underline{rə} \underline{t̪ə} ] [ \underline{t̪oː} \underline{ɦɑː} \underline{rə} ]\\
+
+ [ \underline{kə} \underline{ri} \underline{ɦə} ] [ \underline{kʂə} \underline{mɑː} ] [ \underline{cʰə} \underline{ʈʰiː} ] [ \underline{məiː} \underline{jɑː} ]\\
+
+[ \underline{bʰuː} \underline{lə} ] [ \underline{cu} \underline{kə} ] [ \underline{ɡə} \underline{lə} \underline{t̪I} ] [ \underline{ɦə} \underline{mɑː} \underline{rə} ]\\
+
+[ \underline{bʰuː} \underline{lə} ] [ \underline{cu} \underline{kə} ] [ \underline{ɡə} \underline{lə} \underline{t̪I} ] [ \underline{ɦə} \underline{mɑː} \underline{rə} ]\\
+
+ [ \underline{ɡoː} \underline{d̪Iː} ] [ \underline{keː} ] [ \underline{bə} \underline{lə} \underline{kə} \underline{vɑː} ] [ \underline{keː} ] [ \underline{d̪I} \underline{ɦə} ]\\
+
+[ \underline{cʰə} \underline{ʈʰɪː} ] [ \underline{məiː} \underline{jɑː} ] [ \underline{mə} \underline{mə} \underline{t̪ɑː} ] [ \underline{d̪u} \underline{lɑː} \underline{rə} ]\\
+
+[ \underline{cʰə} \underline{ʈʰɪː} ] [ \underline{məiː} \underline{jɑː} ] [ \underline{mə} \underline{mə} \underline{t̪ɑː} ] [ \underline{d̪u} \underline{lɑː} \underline{rə} ]\\
+
+ [ \underline{pi} \underline{jɑː} ] [ \underline{keː} ] [ \underline{sə} \underline{neː} \underline{ɦi} \underline{jɑː} ] [ \underline{bə} \underline{nə} \underline{ɦi} \underline{jə} ]\\
+
+[ \underline{məiː} \underline{jɑː} ] [ \underline{d̪I} \underline{ɦə} ] [ \underline{su} \underline{kʰə} ] [ \underline{sɑː} \underline{rə} ]\\
+
+[ \underline{məiː} \underline{jɑː} ] [ \underline{d̪I} \underline{ɦə} ] [ \underline{su} \underline{kʰə} ] [ \underline{sɑː} \underline{rə} ]\\
+
+ [ \underline{nɑː} \underline{ri} \underline{jə} \underline{rə} ] [ \underline{keː} \underline{rə} \underline{vɑː} ] [ \underline{ɡʰoːu} \underline{d̪ə} \underline{vɑː} ]\\
+
+[ \underline{sɑː} \underline{ɟə} \underline{lə} ] [ \underline{nə} \underline{d̪I} \underline{jɑː} ] [ \underline{ki} \underline{nɑː} \underline{rə} ]\\
+
+[ \underline{sɑː} \underline{ɟə} \underline{lə} ] [ \underline{nə} \underline{d̪I} \underline{jɑː} ] [ \underline{ki} \underline{nɑː} \underline{rə} ]\\
+
+ [ \underline{su} \underline{ni} \underline{ɦə} ] [ \underline{ə} \underline{rə} \underline{ɟə} ] [ \underline{cʰə} \underline{ʈʰi} ] [ \underline{məiː} \underline{jɑː} ]\\
+
+[ \underline{bə} \underline{ɖʰe} ] [ \underline{ku} \underline{lə} ] [ \underline{pə} \underline{ri} \underline{vɑː} \underline{rə} ]\\
+
+[ \underline{bə} \underline{ɖʰe} ] [ \underline{ku} \underline{lə} ] [ \underline{pə} \underline{ri} \underline{vɑː} \underline{rə} ]\\
+
+\subsection*{\textbf{Text 2}}
+
+[ \underline{uɡə} \underline{ɦə} ] [ \underline{ɦeː} ] [ \underline{suː} \underline{rə} \underline{ɟə} ] [ \underline{d̪eː} \underline{və} ] [ \underline{bʰeː} \underline{lə} ] [ \underline{bʰi} \underline{nə} \underline{sə} \underline{rə} \underline{vɑː} ]\\
+
+[ \underline{ə} \underline{rə} \underline{ɡʰə} ] [ \underline{keː} ] [ \underline{reː} ] [ \underline{beː} \underline{rə} \underline{vɑː} ] [ \underline{puː} \underline{ɟə} \underline{nə} ] [ \underline{keː} ] [ \underline{reː} ] [ \underline{beː} \underline{rə} \underline{vɑː} ] [ \underline{ɦoː} ] \\
+
+[ \underline{bə} \underline{ɽə} \underline{kiː} ] [ \underline{pu} \underline{kɑː} \underline{reː} ] [ \underline{d̪eː} \underline{və} ] [ \underline{d̪u} \underline{nu} ] [ \underline{kə} \underline{rə} ] [ \underline{ɟoː} \underline{rə} \underline{vɑː} ] \\
+
+[ \underline{bɑː} \underline{ɟʰi} \underline{nə} ] [ \underline{pu} \underline{kɑː} \underline{reː} ] [ \underline{d̪eː} \underline{və} ] [ \underline{d̪u} \underline{nu} ] [ \underline{kə} \underline{rə} ] [ \underline{ɟoː} \underline{rə} \underline{vɑː}]\\
+
+[ \underline{ən} \underline{ɦə} \underline{rɑː} ] [ \underline{pu} \underline{kɑː} \underline{reː} ] [ \underline{d̪eː} \underline{və} ] [ \underline{d̪u} \underline{nu} ɡ [ \underline{kə} \underline{rə} ] [ \underline{ɟoː} \underline{rə} \underline{vɑː}]\\
+
+[ \underline{nir} \underline{d̪ʰə} \underline{nə} ] [ \underline{pu} \underline{kɑː} \underline{reː} ] [ \underline{d̪eː} \underline{və} ] [
+\underline{d̪u} \underline{nu}] [\underline{kə} \underline{rə}] [\underline{ɟoː} \underline{rə} \underline{vɑː}]\\
+
+[ \underline{koː} \underline{ɽʱi} \underline{jɑː} ] [ \underline{pu} \underline{kɑː} \underline{reː} ] [ \underline{d̪eː} \underline{və} ] [ \underline{d̪u} \underline{nu} ] [ \underline{kə} \underline{rə} ] [ \underline{ɟoː} \underline{rə} \underline{vɑː}]\\
+
+[ \underline{lⁿɡə} \underline{ɽɑː} ] [ \underline{pu} \underline{kɑː} \underline{reː} ] [ \underline{d̪eː} \underline{və} ] [ \underline{d̪u} \underline{nu} ] [ \underline{kə} \underline{rə} ] [ \underline{ɟoː} \underline{rə} \underline{vɑː} ]\\
+
+\subsection*{\textbf{Text 3}}
+
+\hspace{0.7cm}[ \underline{kɑːⁿ} \underline{cə} ] [ \underline{ɦiː} ] [ \underline{bɑːⁿ} \underline{sə} ] [ \underline{keː} ] [ \underline{bəɦⁿ} \underline{ɡiː} \underline{jɑː} ]\\
+
+[ \underline{bəɦⁿ} \underline{ɡiː} ] [ \underline{lə} \underline{cə} \underline{kə} \underline{t̪ə} ] [ \underline{ɟɑː} \underline{jə} ]\\
+
+[ \underline{ɦoː} \underline{iː} ] [ \underline{nɑː} ] [ \underline{bə} \underline{lə} \underline{mə} ] [ \underline{ɟiː} ] [ \underline{kə} \underline{ɦə} \underline{ri} \underline{jɑː} ]\\
+
+[ \underline{bəɦⁿ} \underline{ɡiː} ] [ \underline{gʰɑː} \underline{ʈeː} ] [ \underline{pə} \underline{ɦuⁿ} \underline{cɑː} \underline{iː} ]\\
+
+[ \underline{bɑː} \underline{ʈeː} ] [ \underline{ɟeː} ] [ \underline{pu} \underline{cʰeː} \underline{lɑː} ] [ \underline{bə} \underline{ʈoː} \underline{ɦi} \underline{jɑː} ]\\
+
+[ \underline{bəɦⁿ} \underline{ɡiː} ] [ \underline{keː} \underline{kə} \underline{rɑː} ] [ \underline{keː} ] [ \underline{ɟɑː} \underline{jə} ]\\
+
+[ \underline{ɦu} \underline{nə} \underline{veː} ] [ \underline{ɟeː} ] [ \underline{bɑː} \underline{riː} ] [ \underline{cʰə} \underline{ʈʰiː} ] [ \underline{maːi} \underline{jɑː} ]\\
+
+[ \underline{bəɦⁿ} \underline{ɡiː} ] [ \underline{unə} \underline{keː} ] [ \underline{keː} ] [ \underline{ɟɑː} \underline{jə} ]\\
+
+[ \underline{ɦoː} \underline{iː} ] [ \underline{nɑː} ] [ \underline{d̪eː} \underline{və} \underline{rə} ] [ \underline{ɟiː} ]
+[ \underline{kə} \underline{ɦə} \underline{ri} \underline{jɑː} ]\\
+
+[ \underline{bəɦⁿ} \underline{ɡiː} ] [ \underline{gʰɑː} \underline{ʈeː} ] [ \underline{pə} \underline{ɦuⁿ} \underline{cɑː} \underline{iː} ]\\
+
+[ \underline{bɑː} \underline{ʈeː} ] [ \underline{ɟeː} ] [ \underline{pu} \underline{cʰeː} \underline{lɑː} ] [ \underline{bə} \underline{ʈoː} \underline{ɦi} \underline{jɑː} ]\\
+
+[ \underline{bə} \underline{ɦⁿ} \underline{ɡiː} ] [ \underline{keː} \underline{kə} \underline{rɑː} ] [ \underline{keː} ] [ \underline{ɟɑː} \underline{jə} ]\\
+
+[ \underline{t̪uː} ] [ \underline{t̪ə} ] [ \underline{ɑːnɦə} \underline{rə} ] [ \underline{ɦaːu} \underline{veː} ] [ \underline{reː} ] [ \underline{bə} \underline{ʈoː} \underline{ɦi} \underline{jɑː} ]\\
+
+[ \underline{bəɦⁿ} \underline{ɡiː} ] [ \underline{cʰə} \underline{ʈʰə} ] [ \underline{maːi} \underline{jɑː} ] [ \underline{keː} ] [ \underline{ɟɑː} \underline{jə} ]\\
+
+[ \underline{ɦu} \underline{nə} \underline{veː} ] [ \underline{ɟeː} ] [ \underline{bɑː} \underline{riː} ] [ \underline{cʰə} \underline{ʈʰiː} ] [ \underline{maːi} \underline{jɑː} ]\\
+
+\section*{\textbf{Morphological Topology}}
+
+\subsection*{Text 1}
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) {\begin{hindi}
+    कईनी
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, xshift=0cm] {\begin{hindi}
+    कई
+\end{hindi}};
+
+\node (procedure 2) [procedure, below right of=start, xhift=0cm] {\begin{hindi}
+    नी
+\end{hindi}};
+
+\node (procedure 3) [procedure, right of=start, node distance=6cm] {\begin{hindi}
+    करिह
+\end{hindi}};
+
+\node (procedure 5) [procedure, right of=procedure 2, node distance=3cm] {\begin{hindi}
+    करि
+\end{hindi}};
+
+\node (procedure 6) [procedure, right of=procedure 5, node distance=3cm] {\begin{hindi}
+    ह
+\end{hindi}};
+
+\node (procedure 7) [procedure, right of=procedure 3, node distance=6cm] {\begin{hindi}
+    बलकवा
+\end{hindi}};
+
+\node (procedure 8) [procedure, right of=procedure 6, node distance=3cm] {\begin{hindi}
+    बलक
+\end{hindi}};
+
+\node (procedure 9) [procedure, right of=procedure 8, node distance=3cm] {\begin{hindi}
+    वा
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 1, node distance=0.5cm] {(root)};
+
+\node (procedure 11) [procedure, below of=procedure 2, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 12) [procedure, below of=procedure 5, node distance=0.5cm] {(root)};
+
+\node (procedure 13) [procedure, below of=procedure 6, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 14) [procedure, below of=procedure 8, node distance=0.5cm] {(root)};
+
+\node (procedure 15) [procedure, below of=procedure 9, node distance=0.5cm] {(morpheme)};
+
+ \draw [arrow] (start) -- (procedure 1);
+  \draw [arrow] (start) -- (procedure 2);
+   \draw [arrow] (procedure 3) -- (procedure 5);
+    \draw [arrow] (procedure 3) -- (procedure 6);
+     \draw [arrow] (procedure 7) -- (procedure 8);
+      \draw [arrow] (procedure 7) -- (procedure 9);
+
+\end{tikzpicture}
+
+_\\\\
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) {\begin{hindi}
+    सनेहिया
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, xshift=0cm] {\begin{hindi}
+    सनेह
+\end{hindi}};
+
+\node (procedure 2) [procedure, below right of=start, xhift=0cm] {\begin{hindi}
+    िया
+\end{hindi}};
+
+\node (procedure 3) [procedure, right of=start, node distance=6cm] {\begin{hindi}
+    बनहिय
+\end{hindi}};
+
+\node (procedure 5) [procedure, right of=procedure 2, node distance=3cm] {\begin{hindi}
+    बनह
+\end{hindi}};
+
+\node (procedure 6) [procedure, right of=procedure 5, node distance=3cm] {\begin{hindi}
+    िय
+\end{hindi}};
+
+\node (procedure 7) [procedure, right of=procedure 3, node distance=6cm] {\begin{hindi}
+    घोउदवा
+\end{hindi}};
+
+\node (procedure 8) [procedure, right of=procedure 6, node distance=3cm] {\begin{hindi}
+    घोउद
+\end{hindi}};
+
+\node (procedure 9) [procedure, right of=procedure 8, node distance=3cm] {\begin{hindi}
+    वा
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 1, node distance=0.5cm] {(root)};
+
+\node (procedure 11) [procedure, below of=procedure 2, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 12) [procedure, below of=procedure 5, node distance=0.5cm] {(root)};
+
+\node (procedure 13) [procedure, below of=procedure 6, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 14) [procedure, below of=procedure 8, node distance=0.5cm] {(root)};
+
+\node (procedure 15) [procedure, below of=procedure 9, node distance=0.5cm] {(morpheme)};
+
+\draw [arrow] (start) -- (procedure 1);
+  \draw [arrow] (start) -- (procedure 2);
+   \draw [arrow] (procedure 3) -- (procedure 5);
+    \draw [arrow] (procedure 3) -- (procedure 6);
+     \draw [arrow] (procedure 7) -- (procedure 8);
+      \draw [arrow] (procedure 7) -- (procedure 9);
+
+\end{tikzpicture}
+
+_\\\\
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) {\begin{hindi}
+    सुनिह
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, xshift=0cm] {\begin{hindi}
+    सुन
+\end{hindi}};
+
+\node (procedure 2) [procedure, below right of=start, xhift=0cm] {\begin{hindi}
+    िह
+\end{hindi}};
+
+\node (procedure 3) [procedure, right of=start, node distance=6cm] {\begin{hindi}
+    सजावाली
+\end{hindi}};
+
+\node (procedure 5) [procedure, right of=procedure 2, node distance=3cm] {\begin{hindi}
+    सजा
+\end{hindi}};
+
+\node (procedure 6) [procedure, right of=procedure 5, node distance=3cm] {\begin{hindi}
+    ाली
+\end{hindi}};
+
+\node (procedure 7) [procedure, right of=procedure 3, node distance=6cm] {\begin{hindi}
+    अरगिया
+\end{hindi}};
+
+\node (procedure 8) [procedure, right of=procedure 6, node distance=3cm] {\begin{hindi}
+    अरग
+\end{hindi}};
+
+\node (procedure 9) [procedure, right of=procedure 8, node distance=3cm] {\begin{hindi}
+    िया
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 1, node distance=0.5cm] {(root)};
+
+\node (procedure 11) [procedure, below of=procedure 2, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 12) [procedure, below of=procedure 5, node distance=0.5cm] {(root)};
+
+\node (procedure 13) [procedure, below of=procedure 6, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 14) [procedure, below of=procedure 8, node distance=0.5cm] {(root)};
+
+\node (procedure 15) [procedure, below of=procedure 9, node distance=0.5cm] {(morpheme)};
+
+\draw [arrow] (start) -- (procedure 1);
+  \draw [arrow] (start) -- (procedure 2);
+   \draw [arrow] (procedure 3) -- (procedure 5);
+    \draw [arrow] (procedure 3) -- (procedure 6);
+     \draw [arrow] (procedure 7) -- (procedure 8);
+      \draw [arrow] (procedure 7) -- (procedure 9);
+
+\end{tikzpicture}
+
+\subsection*{Text 2}
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) {\begin{hindi}
+    उगह
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, xshift=0cm] {\begin{hindi}
+    उग
+\end{hindi}};
+
+\node (procedure 2) [procedure, below right of=start, xhift=0cm] {\begin{hindi}
+   ह
+\end{hindi}};
+
+\node (procedure 3) [procedure, right of=start, node distance=6cm] {\begin{hindi}
+    भिनसरवा
+\end{hindi}};
+
+\node (procedure 5) [procedure, right of=procedure 2, node distance=3cm] {\begin{hindi}
+    भिनसर
+\end{hindi}};
+
+\node (procedure 6) [procedure, right of=procedure 5, node distance=3cm] {\begin{hindi}
+   वा
+\end{hindi}};
+
+\node (procedure 7) [procedure, right of=procedure 3, node distance=6cm] {\begin{hindi}
+    जोरवा
+\end{hindi}};
+
+\node (procedure 8) [procedure, right of=procedure 6, node distance=3cm] {\begin{hindi}
+    जोर
+\end{hindi}};
+
+\node (procedure 9) [procedure, right of=procedure 8, node distance=3cm] {\begin{hindi}
+    वा
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 1, node distance=0.5cm] {(root)};
+
+\node (procedure 11) [procedure, below of=procedure 2, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 12) [procedure, below of=procedure 5, node distance=0.5cm] {(root)};
+
+\node (procedure 13) [procedure, below of=procedure 6, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 14) [procedure, below of=procedure 8, node distance=0.5cm] {(root)};
+
+\node (procedure 15) [procedure, below of=procedure 9, node distance=0.5cm] {(morpheme)};
+
+\draw [arrow] (start) -- (procedure 1);
+  \draw [arrow] (start) -- (procedure 2);
+   \draw [arrow] (procedure 3) -- (procedure 5);
+    \draw [arrow] (procedure 3) -- (procedure 6);
+     \draw [arrow] (procedure 7) -- (procedure 8);
+      \draw [arrow] (procedure 7) -- (procedure 9);
+
+\end{tikzpicture}
+
+_\\\\
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) {\begin{hindi}
+    बाझिंन
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, xshift=0cm] {\begin{hindi}
+    बांझ
+\end{hindi}};
+
+\node (procedure 2) [procedure, below right of=start, xhift=0cm] {\begin{hindi}
+   िन
+\end{hindi}};
+
+\node (procedure 3) [procedure, right of=start, node distance=6cm] {\begin{hindi}
+    अन्हरा
+\end{hindi}};
+
+\node (procedure 5) [procedure, right of=procedure 2, node distance=3cm] {\begin{hindi}
+    अन्हर
+\end{hindi}};
+
+\node (procedure 6) [procedure, right of=procedure 5, node distance=3cm] {\begin{hindi}
+   ा
+\end{hindi}};
+
+\node (procedure 7) [procedure, right of=procedure 3, node distance=6cm] {\begin{hindi}
+    बेरवा
+\end{hindi}};
+
+\node (procedure 8) [procedure, right of=procedure 6, node distance=3cm] {\begin{hindi}
+    बेर
+\end{hindi}};
+
+\node (procedure 9) [procedure, right of=procedure 8, node distance=3cm] {\begin{hindi}
+   वा
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 1, node distance=0.5cm] {(root)};
+
+\node (procedure 11) [procedure, below of=procedure 2, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 12) [procedure, below of=procedure 5, node distance=0.5cm] {(root)};
+
+\node (procedure 13) [procedure, below of=procedure 6, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 14) [procedure, below of=procedure 8, node distance=0.5cm] {(root)};
+
+\node (procedure 15) [procedure, below of=procedure 9, node distance=0.5cm] {(morpheme)};
+
+\draw [arrow] (start) -- (procedure 1);
+  \draw [arrow] (start) -- (procedure 2);
+   \draw [arrow] (procedure 3) -- (procedure 5);
+    \draw [arrow] (procedure 3) -- (procedure 6);
+     \draw [arrow] (procedure 7) -- (procedure 8);
+      \draw [arrow] (procedure 7) -- (procedure 9);
+
+\end{tikzpicture}
+
+\subsection*{Text 3}
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) {\begin{hindi}
+    बहंगिया
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, xshift=0cm] {\begin{hindi}
+    बहंग
+\end{hindi}};
+
+\node (procedure 2) [procedure, below right of=start, xhift=0cm] {\begin{hindi}
+   िया
+\end{hindi}};
+
+\node (procedure 3) [procedure, right of=start, node distance=6cm] {\begin{hindi}
+   कहरिया
+\end{hindi}};
+
+\node (procedure 5) [procedure, right of=procedure 2, node distance=3cm] {\begin{hindi}
+    कहर
+\end{hindi}};
+
+\node (procedure 6) [procedure, right of=procedure 5, node distance=3cm] {\begin{hindi}
+   िया
+\end{hindi}};
+
+\node (procedure 7) [procedure, right of=procedure 3, node distance=6cm] {\begin{hindi}
+    केकरा
+\end{hindi}};
+
+\node (procedure 8) [procedure, right of=procedure 6, node distance=3cm] {\begin{hindi}
+    केक
+\end{hindi}};
+
+\node (procedure 9) [procedure, right of=procedure 8, node distance=3cm] {\begin{hindi}
+    रा
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 1, node distance=0.5cm] {(root)};
+
+\node (procedure 11) [procedure, below of=procedure 2, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 12) [procedure, below of=procedure 5, node distance=0.5cm] {(root)};
+
+\node (procedure 13) [procedure, below of=procedure 6, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 14) [procedure, below of=procedure 8, node distance=0.5cm] {(root)};
+
+\node (procedure 15) [procedure, below of=procedure 9, node distance=0.5cm] {(morpheme)};
+
+\draw [arrow] (start) -- (procedure 1);
+  \draw [arrow] (start) -- (procedure 2);
+   \draw [arrow] (procedure 3) -- (procedure 5);
+    \draw [arrow] (procedure 3) -- (procedure 6);
+     \draw [arrow] (procedure 7) -- (procedure 8);
+      \draw [arrow] (procedure 7) -- (procedure 9);
+
+\end{tikzpicture}
+
+_\\\\
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) {\begin{hindi}
+     पुछेला
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, xshift=0cm] {\begin{hindi}
+    पुछ
+\end{hindi}};
+
+\node (procedure 2) [procedure, below right of=start, xhift=0cm] {\begin{hindi}
+   ेला
+\end{hindi}};
+
+\node (procedure 3) [procedure, right of=start, node distance=6cm] {\begin{hindi}
+    बटोहिया
+\end{hindi}};
+
+\node (procedure 5) [procedure, right of=procedure 2, node distance=3cm] {\begin{hindi}
+    बटोह
+\end{hindi}};
+
+\node (procedure 6) [procedure, right of=procedure 5, node distance=3cm] {\begin{hindi}
+   िया
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 1, node distance=0.5cm] {(root)};
+
+\node (procedure 11) [procedure, below of=procedure 2, node distance=0.5cm] {(morpheme)};
+
+\node (procedure 12) [procedure, below of=procedure 5, node distance=0.5cm] {(root)};
+
+\node (procedure 13) [procedure, below of=procedure 6, node distance=0.5cm] {(morpheme)};
+
+\draw [arrow] (start) -- (procedure 1);
+  \draw [arrow] (start) -- (procedure 2);
+   \draw [arrow] (procedure 3) -- (procedure 5);
+    \draw [arrow] (procedure 3) -- (procedure 6);
+
+\end{tikzpicture}
+
+\subsubsection*{Cases in \emph{Maithili} language}
+
+In \emph{Maithili} language, the general cases used are:
+
+\begin{itemize}
+    
+    \item \begin{hindi}
+        का  
+    \end{hindi}(oblique)
+
+    For example: \begin{hindi}
+        हुन\underline{का} सभकेँ दियौक
+    \end{hindi}
+
+    \item \begin{hindi}
+        रा 
+    \end{hindi}(oblique)
+
+    For example: \begin{hindi}
+        हम\underline{रा} दिअ
+    \end{hindi}
+
+    \item \begin{hindi}
+        स 
+    \end{hindi}(instrument)
+
+    For example: \begin{hindi}
+        हम कलम \underline{स} परीक्षा लिखैत छी
+    \end{hindi}
+
+    \item \begin{hindi}
+        सँ 
+    \end{hindi}(source)
+
+    For example: \begin{hindi}
+        हम गिलास\underline{सँ} पानि पीबैत छी
+    \end{hindi}
+    
+\end{itemize}
+
+Generally, in \emph{Maithili} language it seen that cases are attached with Nouns to form meaning.
+
+\subsubsection*{Gender}
+
+In \emph{Maithili} language, the morphemes attached in root are gender neutral, and does not usually tell anything about the gender of the object.\\
+
+For example: \begin{hindi}
+    ओक\underline{रा} किछु भोजन दऽ दियौक।
+\end{hindi}
+
+Translation: Give some food to him/her.
+
+\section*{\textbf{Syntax Analysis}}
+
+\subsection*{\textbf{Phrase Structure Grammar Trees}}
+
+\subsubsection*{Text 1}
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) [startstop, below=of current page.north, xshift=-1
+cm] {\begin{hindi}
+    पहिले पहिले हम कईनी छठी मईया व्रत तोहार  
+\end{hindi}};
+
+\node (procedure 1) [procedure, below of=start] {NP(Pro.)};
+
+\node (procedure 2) [procedure, left of=procedure 1, xshift=-0.5cm] {Adv.};
+
+\node (procedure 3) [procedure, right of=procedure 1, xshift=0.5cm] {VP};
+
+\node (procedure 4) [procedure, below left of=procedure 3, xshift=-0.5cm, yshift=-1cm] {V};
+
+\node (procedure 5) [procedure, below right of=procedure 3, xshift=0.5cm, yshift=-1cm] {Rel. Cl.};
+
+\node (procedure 6) [procedure, below left of=procedure 5, xshift=-1 cm, yshift=-1cm] {NP};
+
+\node (procedure 7) [procedure, below right of=procedure 5, xshift=1cm, yshift=-1cm] {NP};
+
+\node (procedure 8) [procedure, below left of=procedure 6] {Adj.};
+
+\node (procedure 9) [procedure, below right of=procedure 6] {NP};
+
+\node (procedure 10) [procedure, below left of=procedure 7] {N};
+
+\node (procedure 11) [procedure, below right of=procedure 7] {Pro.};
+
+\node (procedure 12) [procedure, below of=procedure 2, yshift=1cm] {\begin{hindi}
+    (पहिले पहिले)
+\end{hindi}};
+
+\node (procedure 12) [procedure, below of=procedure 1, yshift=1cm] {\begin{hindi}
+    (हम)
+\end{hindi}};
+
+\node (procedure 13) [procedure, below of=procedure 4, yshift=1cm] {\begin{hindi}
+    (कईनी)
+\end{hindi}};
+
+\node (procedure 14) [procedure, below of=procedure 8, yshift=1cm] {\begin{hindi}
+    (छठी)
+\end{hindi}};
+
+\node (procedure 15) [procedure, below of=procedure 9, yshift=1cm] {\begin{hindi}
+    (मईया)
+\end{hindi}};
+
+\node (procedure 16) [procedure, below of=procedure 10, yshift=1cm] {\begin{hindi}
+    (व्रत)
+\end{hindi}};
+
+\node (procedure 17) [procedure, below of=procedure 11, yshift=1cm] {\begin{hindi}
+    (तोहार)
+\end{hindi}};
+
+\draw [arrow] (start) -- (procedure 1);
+
+\draw [arrow] (start) -- (procedure 2);
+
+\draw [arrow] (start) -- (procedure 3);
+
+\draw [arrow] (procedure 3) -- (procedure 4);
+
+\draw [arrow] (procedure 3) -- (procedure 5);
+
+\draw [arrow] (procedure 5) -- (procedure 6);
+
+\draw [arrow] (procedure 5) -- (procedure 7);
+
+\draw [arrow] (procedure 6) -- (procedure 8);
+
+\draw [arrow] (procedure 6) -- (procedure 9);
+
+\draw [arrow] (procedure 7) -- (procedure 10);
+
+\draw [arrow] (procedure 7) -- (procedure 11);
+
+\end{tikzpicture}
+
+_\\\\
+
+\begin{tikzpicture}[node distance=2cm,auto]
+
+\node (start) {\begin{hindi}
+    छठी मईया गोदी के बलकवा के ममता दुलार दिह
+\end{hindi}};
+
+\node (procedure 2) [procedure, below of=start] {Rel. Cl.};
+
+\node (procedure 1) [procedure, right of=procedure 2, xshift=4cm] {VP};
+
+\node (procedure 3) [procedure, left of=procedure 2, xshift=-4cm] {NP};
+
+\node (procedure 5) [procedure, below of=procedure 2, yshift=-1cm] {Case};
+
+\node (procedure 4) [procedure, left of=procedure 5, xshift=-1cm] {NP};
+
+\node (procedure 6) [procedure, right of=procedure 5, xshift=1cm] {NP};
+
+\node (procedure 7) [procedure, below left of=procedure 3] {Adj.};
+
+\node (procedure 8) [procedure, below right of=procedure 3] {N};
+
+\node (procedure 9) [procedure, below of=procedure 4, yshift=-0.5cm] {Case};
+
+\node (procedure 10) [procedure, right of=procedure 9] {N};
+
+\node (procedure 11) [procedure, left of=procedure 9] {N};
+
+\node (procedure 12) [procedure, below left of=procedure 6, yshift=-1cm] {N};
+
+\node (procedure 13) [procedure, below right of=procedure 6, yshift=-1cm] {N};
+
+\node (procedure 14) [procedure, below of=procedure 1, yshift=1cm] {\begin{hindi}
+    (दिह)
+\end{hindi}}];
+
+\node (procedure 16) [procedure, below of=procedure 5, yshift=1cm] {\begin{hindi}
+    (के)
+\end{hindi}}];
+
+\node (procedure 17) [procedure, below of=procedure 7, yshift=1cm] {\begin{hindi}
+    (छठी)
+\end{hindi}}];
+
+\node (procedure 18) [procedure, below of=procedure 8, yshift=1cm] {\begin{hindi}
+    (मईया)
+\end{hindi}}];
+
+\node (procedure 19) [procedure, below of=procedure 9, yshift=1cm] {\begin{hindi}
+    (के)
+\end{hindi}}];
+
+\node (procedure 20) [procedure, below of=procedure 10, yshift=1cm] {\begin{hindi}
+    (बलकवा)
+\end{hindi}}];
+
+\node (procedure 21) [procedure, below of=procedure 11, yshift=1cm] {\begin{hindi}
+    (गोदी)
+\end{hindi}}];
+
+\node (procedure 22) [procedure, below of=procedure 12, yshift=1cm] {\begin{hindi}
+    (ममता)
+\end{hindi}}];
+
+\node (procedure 22) [procedure, below of=procedure 13, yshift=1cm] {\begin{hindi}
+    (दुलार)
+\end{hindi}}];
+
+\draw [arrow] (start) -- (procedure 1);
+
+\draw [arrow] (start) -- (procedure 2);
+
+\draw [arrow] (start) -- (procedure 3);
+
+\draw [arrow] (procedure 2) -- (procedure 5);
+
+\draw [arrow] (procedure 2) -- (procedure 4);
+
+\draw [arrow] (procedure 2) -- (procedure 6);
+
+\draw [arrow] (procedure 3) -- (procedure 7);
+
+\draw [arrow] (procedure 3) -- (procedure 8);
+
+\draw [arrow] (procedure 4) -- (procedure 9);
+
+\draw [arrow] (procedure 4) -- (procedure 10);
+
+\draw [arrow] (procedure 4) -- (procedure 11);
+
+\draw [arrow] (procedure 6) -- (procedure 12);
+
+\draw [arrow] (procedure 6) -- (procedure 13);
+
+\end{tikzpicture}
+
+\subsubsection*{Text 2}
+
+\begin{tikzpicture}
+
+\node (start) {\begin{hindi}
+    उगह हे सूरज देव भेल भिनसरवा 
+\end{hindi}}
+
+\node (procedure 1) [procedure, below of=start, yshift=-1cm]{NP};
+
+\node (procedure 2) [procedure, left of=procedure 1, xshift=-3.5cm]{VP};
+
+\node (procedure 3) [procedure, right of=procedure 1, xshift=3.5cm]{Rel. Cla.};
+
+\node (procedure 4) [procedure, below left of=procedure 1, yshift=-1cm, xshift=-0.5cm]{Vocative};
+
+\node (procedure 5) [procedure, below right of=procedure 1, yshift=-1cm, xshift=0.5cm]{N};
+
+\node (procedure 6) [procedure, below left of=procedure 3, yshift=-1cm, xshift=-0.5cm]{V};
+
+\node (procedure 7) [procedure, below right of=procedure 3, yshift=-1cm, xshift=0.5cm]{N};
+
+\node (procedure 8) [procedure, below of=procedure 2] {\begin{hindi}
+    (उगह)
+\end{hindi}};
+
+\node (procedure 9) [procedure, below of=procedure 4] {\begin{hindi}
+    (हे)
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 5] {\begin{hindi}
+    (सूरज देव)
+\end{hindi}};
+
+\node (procedure 11) [procedure, below of=procedure 6] {\begin{hindi}
+    (भेल)
+\end{hindi}};
+
+\node (procedure 12) [procedure, below of=procedure 7] {\begin{hindi}
+    (भिनसरवा)
+\end{hindi}};
+
+\draw [arrow] (start) -- (procedure 1);
+
+\draw [arrow] (start) -- (procedure 2);
+
+\draw [arrow] (start) -- (procedure 3);
+
+\draw [arrow] (procedure 1) -- (procedure 4);
+
+\draw [arrow] (procedure 1) -- (procedure 5);
+
+\draw [arrow] (procedure 3) -- (procedure 6);
+
+\draw [arrow] (procedure 3) -- (procedure 7);
+    
+\end{tikzpicture}
+
+\begin{tikzpicture}
+
+_\\ \\
+
+\node (start) {\begin{hindi}
+    बड़की पुकारे देव दुनु कर जोरवा
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, yshift=-1cm, xshift=-1cm] {NP};
+
+\node (procedure 2) [procedure, below right of=start, yshift=-1cm, xshift=1cm] {VP};
+
+\node (procedure 3) [procedure, below of= procedure 2, yshift=-1cm] {NP};
+
+\node (procedure 4) [procedure, left of= procedure 3, xshift=-1cm] {V};
+
+\node (procedure 5) [procedure, right of= procedure 3, xshift=1cm] {Comp.};
+
+\node (procedure 6) [procedure, left of= procedure 5, yshift=-2cm] {N};
+
+\node (procedure 7) [procedure, right of= procedure 5, yshift=-2cm] {VP};
+
+\node (procedure 8) [procedure, left of= procedure 7, yshift=-2cm] {V};
+
+\node (procedure 9) [procedure, right of= procedure 7, yshift=-2cm] {N};
+
+\node (procedure 10) [procedure, below of=procedure 1, yshift=0.3cm] {\begin{hindi}
+    (बड़की)
+\end{hindi}};
+
+\node (procedure 11) [procedure, below of=procedure 4, yshift=0.3cm] {\begin{hindi}
+    (पुकारे)
+\end{hindi}};
+
+\node (procedure 12) [procedure, below of=procedure 3, yshift=0.3cm] {\begin{hindi}
+    (देव)
+\end{hindi}};
+
+\node (procedure 13) [procedure, below of=procedure 6, yshift=0.3cm] {\begin{hindi}
+    (दुनु)
+\end{hindi}};
+
+\node (procedure 14) [procedure, below of=procedure 8, yshift=0.3cm] {\begin{hindi}
+    (कर)
+\end{hindi}};
+
+\node (procedure 15) [procedure, below of=procedure 9, yshift=0.3cm] {\begin{hindi}
+    (जोरवा)
+\end{hindi}};
+
+
+ \draw [arrow] (start) -- (procedure 1);
+
+ \draw [arrow] (start) -- (procedure 2);
+
+ \draw [arrow] (procedure 2) -- (procedure 3);
+
+ \draw [arrow] (procedure 2) -- (procedure 4);
+
+ \draw [arrow] (procedure 2) -- (procedure 5);
+
+ \draw [arrow] (procedure 5) -- (procedure 6);
+
+ \draw [arrow] (procedure 5) -- (procedure 7);
+
+ \draw [arrow] (procedure 7) -- (procedure 8);
+
+ \draw [arrow] (procedure 7) -- (procedure 9);
+   
+\end{tikzpicture}
+
+\subsubsection*{Text 3}
+
+\begin{tikzpicture}
+
+\node (start) {\begin{hindi}
+    तू तो आन्हर होवे रे बटोहिया
+\end{hindi}};
+
+\node (procedure 1) [procedure, below left of=start, yshift=-1cm,xshift=-1cm] {NP};
+
+\node (procedure 2) [procedure, below right of=start, yshift=-1cm,xshift=1cm] {VP};
+
+\node (procedure 3) [procedure, below left of=procedure 2, yshift=-1cm,xshift=-1cm] {VP};
+
+\node (procedure 4) [procedure, below right of=procedure 2, yshift=-1cm,xshift=1cm] {NP};
+
+\node (procedure 5) [procedure, below left of=procedure 3, yshift=-1cm,xshift=-0.5cm] {N};
+
+\node (procedure 6) [procedure, below right of=procedure 3, yshift=-1cm,xshift=0.5cm] {V};
+
+\node (procedure 7) [procedure, below left of=procedure 4, yshift=-3cm,xshi seft=-0.5cm] {Vocative};
+
+\node (procedure 8) [procedure, below right of=procedure 4, yshift=-3cm,xshift=0.5cm] {N};
+
+\node (procedure 9) [procedure, below of=procedure 1, yshift=0.3cm] {\begin{hindi}
+    (तू तो)
+\end{hindi}};
+
+\node (procedure 10) [procedure, below of=procedure 5, yshift=0.3cm] {\begin{hindi}
+    (आन्हर)
+\end{hindi}};
+
+\node (procedure 11) [procedure, below of=procedure 6, yshift=0.3cm] {\begin{hindi}
+    (होवे)
+\end{hindi}};
+
+\node (procedure 12) [procedure, below of=procedure 7, yshift=0.3cm] {\begin{hindi}
+    (रे)
+\end{hindi}};
+
+\node (procedure 13) [procedure, below of=procedure 8, yshift=0.3cm] {\begin{hindi}
+    (बटोहिया)
+\end{hindi}};
+
+ \draw [arrow] (start) -- (procedure 1);
+
+ \draw [arrow] (start) -- (procedure 2);
+
+ \draw [arrow] (procedure 2) -- (procedure 3);
+
+ \draw [arrow] (procedure 2) -- (procedure 4);
+
+ \draw [arrow] (procedure 3) -- (procedure 5);
+
+ \draw [arrow] (procedure 3) -- (procedure 6);
+
+ \draw [arrow] (procedure 4) -- (procedure 7);
+
+ \draw [arrow] (procedure 4) -- (procedure 8);
+    
+\end{tikzpicture}
+
+_\\\\
+
+\begin{tikzpicture}
+    
+\node (start) {\begin{hindi}
+    बहंगी केकरा के जाए
+\end{hindi}};
+
+\node (procedure 1) [below left of=start, xshift=-1cm, yshift= -1cm] {NP};
+
+\node (procedure 2) [below right of=start, xshift=1cm, yshift= -1cm] {VP};
+
+\node (procedure 3) [below left of=procedure 2, xshift=-1cm, yshift= -1cm] {PP};
+
+\node (procedure 4) [below right of=procedure 2, xshift=1cm, yshift= -1cm] {V};
+
+\node (procedure 5) [below left of=procedure 3, xshift=-1cm, yshift= -1cm] {Pro.};
+
+\node (procedure 6) [below right of=procedure 3, xshift=1cm, yshift= -1cm] {P};
+
+\node (procedure ) [below of=procedure 1, yshift=0.3cm] {\begin{hindi}
+    (बहंगी)
+\end{hindi}};
+
+\node (procedure ) [below of=procedure 5, yshift=0.3cm] {\begin{hindi}
+    (केकरा)
+\end{hindi}};
+
+\node (procedure ) [below of=procedure 6, yshift=0.3cm] {\begin{hindi}
+    (के)
+\end{hindi}};
+
+\node (procedure ) [below of=procedure 4, yshift=0.3cm] {\begin{hindi}
+    (जाए)
+\end{hindi}};
+
+ \draw [arrow] (start) -- (procedure 1);
+
+ \draw [arrow] (start) -- (procedure 2);
+
+ \draw [arrow] (procedure 2) -- (procedure 3);
+
+ \draw [arrow] (procedure 2) -- (procedure 4);
+
+ \draw [arrow] (procedure 3) -- (procedure 5);
+
+ \draw [arrow] (procedure 3) -- (procedure 6);
+
+ \end{tikzpicture}
+
+ \subsubsection*{Word Order}
+
+ It is seen that the general word order of \emph{Maithili} language observed is Subject-Object-Verb (SOV) order.\\
+
+ For example: \\
+ 
+ \begin{tikzpicture}
+
+\node (start) {\begin{hindi}
+    \underline{गोदी के बलकवा के ममता दुलार}
+\end{hindi}};
+
+\node (procedure 1) [left of=start, xshift=-3.7cm] {\begin{hindi}
+    \underline{छठी मईया}
+\end{hindi}};
+
+\node (procedure 2) [right of=start, xshift=3cm] {\begin{hindi}
+    \underline{दिह}
+\end{hindi}};
+
+\node (procedure 3) [below of=procedure 1] {(Subject)};
+
+\node (procedure 4) [below of=start] {(Object)};
+
+\node (procedure 5) [below of=procedure 2] {(Verb)};
+
+ \end{tikzpicture}
+
+ Although a meaningful sentence could also be formed by other word orders, hence the syntax is flexible.\\
+
+ For example:\\
+
+ \begin{tikzpicture}
+
+\node (start) {\begin{hindi}
+    \underline{सूरज देव}
+\end{hindi}};
+
+\node (procedure 1) [left of=start, xshift=-1cm] {\begin{hindi}
+    \underline{उगह हे}
+\end{hindi}};
+
+\node (procedure 2) [right of=start, xshift=1.7cm] {\begin{hindi}
+    \underline{भेल भिनसरवा}
+\end{hindi}};
+
+\node (procedure 3) [below of=procedure 1] {(Verb)};
+
+\node (procedure 4) [below of=start] {(Subject)};
+
+\node (procedure 5) [below of=procedure 2] {(Object)};
+
+ \end{tikzpicture}
+ \subsubsection*{Distribution of Constituents}
+
+In \emph{Maithili} language, usually  Left Branching of constituents is seen.
+
+For example: 
+
+\begin{tikzpicture}
+
+\node (start) {\begin{hindi}
+    \underline{गोदी के बलकवा के}
+\end{hindi}};
+
+\node (procedure 2) [procedure, right of=start, xshift=2.8cm] {\begin{hindi}
+    ममता दुलार
+\end{hindi}}
+
+\node (procedure 1) [procedure, below of=start] {(left branching)};
+    
+\end{tikzpicture}
+
+\end{document}
